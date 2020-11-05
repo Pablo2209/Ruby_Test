@@ -15,8 +15,8 @@ require 'json'
         JSON.parse response.read_body
     end
     
-    body = request("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY", "2y4Kfc1QTMpM5TYq4VkPn0Fd652aJpbp516DxTDD")
-    body = body["photos"][0..5]                     
+    body = request("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY", "AnJZ7VFdfjCDRU2KuUgpek1j9ZUndhJqv5Hd3UhU")
+    body = body["photos"][0..1]                     
 
 
     def build_web_page(body)
